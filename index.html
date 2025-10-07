@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Postdoctoral Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .publication-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .publication-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">Your Name</h1>
+                    <p class="text-md text-gray-600">Postdoctoral Researcher</p>
+                </div>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="#cv" class="text-gray-600 hover:text-blue-600 transition">CV</a>
+                    <a href="#publications" class="text-gray-600 hover:text-blue-600 transition">Publications</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#cv" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CV</a>
+            <a href="#publications" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Publications</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- About Section -->
+        <section id="about" class="mb-16 scroll-mt-20">
+            <div class="flex flex-col md:flex-row items-start gap-8">
+                <div class="w-full md:w-1/3 text-center">
+                    <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Your+Photo" alt="Your Name" class="rounded-full mx-auto shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover">
+                    <div class="mt-6 text-left">
+                        <div class="flex items-center justify-start mb-3">
+                             <i class="fas fa-map-marker-alt w-6 text-gray-500"></i>
+                             <span class="ml-2">Nagoya, Japan</span>
+                        </div>
+                        <div class="flex items-center justify-start mb-3">
+                             <i class="fas fa-building w-6 text-gray-500"></i>
+                             <span class="ml-2">Nagoya University</span>
+                        </div>
+                        <div class="flex items-center justify-start mb-3">
+                             <i class="fas fa-envelope w-6 text-gray-500"></i>
+                             <a href="mailto:your.email@example.com" class="ml-2 text-blue-600 hover:underline">Email</a>
+                        </div>
+                         <div class="flex items-center justify-start mb-3">
+                             <i class="fab fa-researchgate w-6 text-gray-500"></i>
+                             <a href="#" class="ml-2 text-blue-600 hover:underline">ResearchGate</a>
+                        </div>
+                         <div class="flex items-center justify-start mb-3">
+                             <i class="fab fa-github w-6 text-gray-500"></i>
+                             <a href="#" class="ml-2 text-blue-600 hover:underline">Github</a>
+                        </div>
+                        <div class="flex items-center justify-start mb-3">
+                             <i class="fas fa-graduation-cap w-6 text-gray-500"></i>
+                             <a href="#" class="ml-2 text-blue-600 hover:underline">Google Scholar</a>
+                        </div>
+                        <div class="flex items-center justify-start">
+                             <i class="fab fa-orcid w-6 text-gray-500"></i>
+                             <a href="#" class="ml-2 text-blue-600 hover:underline">ORCID</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold section-title">About Me</h2>
+                    <p class="text-lg leading-relaxed mb-4">
+                        I am a postdoctoral researcher at [Your University/Institution], specializing in [Your Field]. My research focuses on [briefly describe your research focus, e.g., machine learning, computational biology, theoretical physics]. I am passionate about solving complex problems and contributing to the scientific community.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        I received my Ph.D. in [Your Degree] from [Your PhD University] in [Year]. Before that, I completed my M.S./B.S. in [Your Degree] from [Your Undergraduate University]. Feel free to browse my research interests, publications, and get in touch!
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="your_cv_link.pdf" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition shadow-md" download>
+                            <i class="fas fa-download mr-2"></i>Download CV
+                        </a>
+                         <a href="mailto:your.email@example.com" class="bg-gray-700 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition shadow-md">
+                            <i class="fas fa-envelope mr-2"></i>Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="mb-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold section-title">Curriculum Vitae</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md space-y-8">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-semibold border-b pb-2 mb-4">Education</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                        <div class="md:col-span-1 text-gray-600 font-medium">2018 - 2022</div>
+                        <div class="md:col-span-3">
+                            <h4 class="font-bold">Ph.D. in [Your Field]</h4>
+                            <p class="italic text-gray-700">[Your PhD University], [City, Country]</p>
+                        </div>
+                    </div>
+                     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div class="md:col-span-1 text-gray-600 font-medium">2016 - 2018</div>
+                        <div class="md:col-span-3">
+                            <h4 class="font-bold">M.S. in [Your Field]</h4>
+                            <p class="italic text-gray-700">[Your MS University], [City, Country]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div>
+                    <h3 class="text-2xl font-semibold border-b pb-2 mb-4">Experience</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                        <div class="md:col-span-1 text-gray-600 font-medium">2022 - Present</div>
+                        <div class="md:col-span-3">
+                            <h4 class="font-bold">Postdoctoral Researcher</h4>
+                            <p class="italic text-gray-700">[Your Current Institution], [City, Country]</p>
+                            <ul class="list-disc list-inside mt-2 text-gray-600">
+                                <li>Briefly describe your responsibilities and achievements.</li>
+                                <li>Use bullet points for clarity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Skills -->
+                <div>
+                    <h3 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h3>
+                     <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Python</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Machine Learning</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Data Analysis</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">PyTorch</span>
+                         <span class="bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Project Management</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="mb-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold section-title">Selected Publications</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <!-- Publication 1 -->
+                <div class="publication-item">
+                    <h3 class="text-xl font-bold text-gray-900">Title of Your Groundbreaking Paper</h3>
+                    <p class="text-md text-gray-700 mt-1">
+                        <strong>Your Name</strong>, Co-author One, Co-author Two
+                    </p>
+                    <p class="text-md text-gray-500 italic mt-1">
+                        Conference or Journal Name, Year
+                    </p>
+                    <div class="mt-3 space-x-4">
+                        <a href="#" class="text-blue-600 hover:underline">[PDF]</a>
+                        <a href="#" class="text-blue-600 hover:underline">[Code]</a>
+                        <a href="#" class="text-blue-600 hover:underline">[Project Page]</a>
+                    </div>
+                </div>
+                <!-- Publication 2 -->
+                <div class="publication-item">
+                    <h3 class="text-xl font-bold text-gray-900">Another Important Publication Title</h3>
+                    <p class="text-md text-gray-700 mt-1">
+                        Co-author One, <strong>Your Name</strong>, Co-author Three
+                    </p>
+                    <p class="text-md text-gray-500 italic mt-1">
+                        Journal of Interesting Results, Year
+                    </p>
+                    <div class="mt-3 space-x-4">
+                        <a href="#" class="text-blue-600 hover:underline">[PDF]</a>
+                        <a href="#" class="text-blue-600 hover:underline">[Slides]</a>
+                    </div>
+                </div>
+                <!-- Publication 3 -->
+                <div class="publication-item">
+                    <h3 class="text-xl font-bold text-gray-900">The Title of a Workshop Paper</h3>
+                    <p class="text-md text-gray-700 mt-1">
+                        <strong>Your Name</strong>, Another Co-author
+                    </p>
+                    <p class="text-md text-gray-500 italic mt-1">
+                        Workshop on Awesome Topics @ Conference, Year
+                    </p>
+                    <div class="mt-3 space-x-4">
+                        <a href="#" class="text-blue-600 hover:underline">[PDF]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-20">
+             <h2 class="text-3xl font-bold section-title">Get In Touch</h2>
+             <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                 <p class="text-lg mb-6">
+                     I'm always open to discussing research, collaborations, or new opportunities.
+                 </p>
+                 <p class="text-lg font-medium mb-2">
+                     <i class="fas fa-envelope mr-2 text-gray-500"></i> your.email [at] example.com
+                 </p>
+                 <p class="text-lg font-medium mb-6">
+                    <i class="fas fa-map-marker-alt mr-2 text-gray-500"></i> [Your Office Address], [City, Country]
+                 </p>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16 border-t">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-600">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+            <p class="text-sm mt-1">Powered by GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden'); // Close menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
