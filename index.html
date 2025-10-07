@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayant Unde | Postdoctoral Researcher</title>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY0GD62XVQ"></script>
     <script>
@@ -16,7 +15,6 @@
       gtag('config', 'G-TY0GD62XVQ');
     </script>
     <!-- End Google Analytics -->
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,13 +37,10 @@
         .nav-link:hover {
             color: #3b82f6;
         }
-        .social-link:hover i {
-            transform: scale(1.1);
-            transition: transform 0.2s;
-        }
         .active-link {
             color: #2563eb;
             font-weight: 700;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -78,63 +73,68 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12 max-w-7xl">
-
-        <!-- About Me Section -->
-        <section id="about">
-            <div class="flex flex-col md:flex-row gap-12 items-start">
-                
-                <!-- Left Column: Photo and Info -->
-                <div class="w-full md:w-1/3 text-center md:text-left">
-                     <div class="w-64 h-64 rounded-full mx-auto md:mx-0 mb-6 overflow-hidden shadow-lg border-4 border-white">
-                        <img src="my-photo.png" alt="Jayant Unde" class="w-full h-full object-cover" style="object-position: top;">
-                    </div>
-                    <div class="flex justify-center md:justify-start">
-                        <div class="text-left">
-                            <a href="mailto:jayant.unde7@gmail.com" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
-                                <i class="fas fa-envelope fa-fw"></i><span>Email</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/jayant-unde-38b54b152" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
-                                <i class="fab fa-linkedin fa-fw"></i><span>LinkedIn</span>
-                            </a>
-                            <a href="https://github.com/jayantunde" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
-                                <i class="fab fa-github fa-fw"></i><span>GitHub</span>
-                            </a>
-                             <a href="https://scholar.google.com/citations?user=ClFvQWIAAAAJ&hl=en" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
-                                <i class="fas fa-graduation-cap fa-fw"></i><span>Google Scholar</span>
-                            </a>
-                             <a href="https://orcid.org/0000-0002-3369-776X" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
-                                <i class="fab fa-orcid fa-fw"></i><span>ORCID</span>
-                            </a>
-                            <a href="https://www.researchgate.net/profile/Jayant-Unde" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
-                                <i class="fab fa-researchgate fa-fw"></i><span>ResearchGate</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Bio -->
-                <div class="w-full md:w-2/3">
+        <div class="md:flex md:space-x-12">
+            <!-- Left Side: Main Content -->
+            <div class="md:w-2/3">
+                <!-- About Me Section -->
+                <section id="about">
                     <h2 class="text-3xl font-bold section-title">About Me</h2>
-                    <div class="space-y-4 text-lg leading-relaxed">
-                        <p>I am a Postdoctoral Researcher at the Institute of Innovation for Future Society, <a href="https://en.nagoya-u.ac.jp/" target="_blank" class="text-blue-600 hover:underline">Nagoya University</a>, Japan, working in the <a href="http://www.mein.nagoya-u.ac.jp/en/index.html" target="_blank" class="text-blue-600 hover:underline">Intelligent Robotics and Biomechatronics Laboratory</a>. My research focuses on designing intelligent robotic systems to assist the elderly with their activities of daily living. I specialize in assistive robotics hardware development, particularly hardware with embodied intelligence for safe physical human-robot interaction for the complex challenge of robotic clothing manipulation.</p>
-                        <p>My academic journey began with a B.Tech in Mechanical Engineering from <a href="https://www.coeptech.ac.in/" target="_blank" class="text-blue-600 hover:underline">COEP Technological University</a>, followed by a Master’s and Ph.D. in Mechanical Systems Engineering and Micro-Nano Mechanical Science and Engineering at Nagoya University. During my graduate studies, I developed robotic solutions for elderly care, including high-extension actuators and end-effectors capable of handling human-worn garments and fabric separation.</p>
-                        <p>I'm driven by a passion for robotics, mechanical design, and automation to solve real-world problems and foster inclusivity through intelligent assistive systems. I welcome collaboration with like-minded researchers and professionals. Feel free to connect via email or social links on this site.</p>
+                    <div class="bg-white p-8 rounded-lg shadow-md space-y-4 text-lg text-gray-700 leading-relaxed">
+                        <p>
+                            I am a Postdoctoral Researcher at the <a href="https://www.i.nagoya-u.ac.jp/en/" target="_blank" class="text-blue-600 hover:underline">Institute of Innovation for Future Society, Nagoya University, Japan</a>, working in the <a href="http://www.mein.nagoya-u.ac.jp/en/" target="_blank" class="text-blue-600 hover:underline">Intelligent Robotics and Biomechatronics Laboratory</a>. My research focuses on designing intelligent robotic systems that enhance human capabilities and improve quality of life. I specialize in assistive technologies, safe physical human-robot interaction, and robotic manipulation of clothing, with a particular emphasis on dressing assistance and the development of novel mechanisms such as high extension ratio linear actuators.
+                        </p>
+                        <p>
+                            My academic journey began with a B.Tech in Mechanical Engineering from <a href="https://www.coeptech.ac.in/" target="_blank" class="text-blue-600 hover:underline">COEP Technological University</a>, followed by a Master’s and Ph.D. in Mechanical Systems Engineering and Micro-Nano Mechanical Science and Engineering at <a href="https://en.nagoya-u.ac.jp/" target="_blank" class="text-blue-600 hover:underline">Nagoya University</a>. During my graduate studies, I developed robotic solutions for elderly care, including high-extension actuators and end-effectors capable of handling human-worn garments and fabric separation.
+                        </p>
+                        <p>
+                            I'm driven by a passion for robotics, mechanical design, and automation to solve real-world problems and foster inclusivity through intelligent assistive systems. I welcome collaboration with like-minded researchers and professionals. Feel free to connect via email or social links on this site.
+                        </p>
                     </div>
+                </section>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="md:w-1/3 mt-12 md:mt-0">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center sticky top-24">
+                    <!-- Profile Image -->
+                    <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+                        <img src="my-photo.png" alt="Jayant Unde" class="w-full h-full object-cover" style="object-position: top center;">
+                    </div>
+                    <h3 class="text-2xl font-bold mt-6">Jayant Unde</h3>
+                    <p class="text-gray-600 mt-1">Postdoctoral Researcher</p>
+                    <!-- Social & Academic Links -->
+                    <div class="mt-8 text-left max-w-xs mx-auto">
+                        <ul class="space-y-4">
+                            <li><a href="mailto:jayant.unde7@gmail.com" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-envelope fa-fw mr-4 text-gray-500"></i>
+                                <span>Email</span>
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/jayant-unde-38b54b152/" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-linkedin fa-fw mr-4 text-gray-500"></i>
+                                <span>LinkedIn</span>
+                            </a></li>
+                            <li><a href="https://github.com/jayantunde" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-github fa-fw mr-4 text-gray-500"></i>
+                                <span>GitHub</span>
+                            </a></li>
+                             <li><a href="https://scholar.google.com/citations?user=ClFvQWIAAAAJ&hl=en" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-graduation-cap fa-fw mr-4 text-gray-500"></i>
+                                <span>Google Scholar</span>
+                            </a></li>
+                            <li><a href="https://orcid.org/0000-0002-3369-776X" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-orcid fa-fw mr-4 text-gray-500"></i>
+                                <span>ORCID</span>
+                            </a></li>
+                             <li><a href="https://www.researchgate.net/profile/Jayant-Unde" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-researchgate fa-fw mr-4 text-gray-500"></i>
+                                <span>ResearchGate</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <a href="Jayant_CV.pdf" target="_blank" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md">Download CV</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="mt-16">
-            <h2 class="text-3xl font-bold section-title">Get In Touch</h2>
-            <div class="bg-white p-8 rounded-lg shadow-md text-center">
-                <p class="text-lg mb-4">I am always open to discussing new research, collaborations, or opportunities. Feel free to reach out!</p>
-                <a href="mailto:jayant.unde7@gmail.com" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
-                    Contact Me
-                </a>
-            </div>
-        </section>
-
+        </div>
     </main>
 
     <!-- Footer -->
@@ -155,5 +155,4 @@
 
 </body>
 </html>
-
 
