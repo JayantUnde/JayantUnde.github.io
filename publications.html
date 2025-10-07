@@ -90,16 +90,60 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12 max-w-7xl">
-
-        <!-- Publications Section -->
-        <section id="publications">
-            <h2 class="text-3xl font-bold section-title">Publications</h2>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <!-- BibBase will automatically render publications here -->
-                <script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Fjayantunde%2Fjayantunde.github.io%2Fmain%2Fpublications.bib&noBootstrap=1&jsonp=1&hl=Unde&sort=year:desc"></script>
+        <div class="md:flex md:space-x-12">
+            <!-- Left Side: Publications Content -->
+            <div class="md:w-2/3">
+                <section id="publications">
+                    <h2 class="text-3xl font-bold section-title">Publications</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <!-- BibBase will automatically render publications here -->
+                        <script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Fjayantunde%2Fjayantunde.github.io%2Fmain%2Fpublications.bib&noBootstrap=1&jsonp=1&hl=Unde&sort=year:desc"></script>
+                    </div>
+                </section>
             </div>
-        </section>
 
+            <!-- Right Sidebar -->
+            <div class="md:w-1/3 mt-12 md:mt-0">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center sticky top-24">
+                    <!-- Profile Image -->
+                    <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+                        <img src="my-photo.png" alt="Jayant Unde" class="w-full h-full object-cover" style="object-position: top center;">
+                    </div>
+                    <h3 class="text-2xl font-bold mt-6">Jayant Unde</h3>
+                    <p class="text-gray-600 mt-1">Postdoctoral Researcher</p>
+                    <!-- Social & Academic Links -->
+                    <div class="mt-8 text-left max-w-xs mx-auto">
+                        <ul class="space-y-4">
+                            <li><a href="mailto:jayant.unde7@gmail.com" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-envelope fa-fw mr-4 text-gray-500"></i>
+                                <span>Email</span>
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/jayant-unde-38b54b152/" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-linkedin fa-fw mr-4 text-gray-500"></i>
+                                <span>LinkedIn</span>
+                            </a></li>
+                            <li><a href="https://github.com/jayantunde" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-github fa-fw mr-4 text-gray-500"></i>
+                                <span>GitHub</span>
+                            </a></li>
+                             <li><a href="https://scholar.google.com/citations?user=ClFvQWIAAAAJ&hl=en" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-graduation-cap fa-fw mr-4 text-gray-500"></i>
+                                <span>Google Scholar</span>
+                            </a></li>
+                            <li><a href="https://orcid.org/0000-0002-3369-776X" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-orcid fa-fw mr-4 text-gray-500"></i>
+                                <span>ORCID</span>
+                            </a></li>
+                             <li><a href="https://www.researchgate.net/profile/Jayant-Unde" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-researchgate fa-fw mr-4 text-gray-500"></i>
+                                <span>ResearchGate</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <a href="Jayant_CV.pdf" target="_blank" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md">Download CV</a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -117,6 +161,6 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
-
 </body>
 </html>
+
