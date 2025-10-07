@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Jayant Unde</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY0GD62XVQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TY0GD62XVQ');
+    </script>
+    <!-- End Google Analytics -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 8px;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .active-link {
+            color: #2563eb;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="index.html" class="text-2xl font-bold text-gray-900">Jayant Unde</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 font-medium">About Me</a>
+                <a href="cv.html" class="nav-link active-link">CV</a>
+                <a href="publications.html" class="nav-link text-gray-600 font-medium">Publications</a>
+            </div>
+             <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 font-medium">About Me</a>
+            <a href="cv.html" class="block py-2 text-gray-600 font-medium active-link">CV</a>
+            <a href="publications.html" class="block py-2 text-gray-600 font-medium">Publications</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 max-w-7xl">
+
+        <!-- CV Section -->
+        <section id="cv">
+            <h2 class="text-3xl font-bold section-title">Curriculum Vitae</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md space-y-10">
+
+                <!-- Education Timeline -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-x-3"><i class="fas fa-graduation-cap text-blue-600"></i> Education</h3>
+                    <div class="relative border-l-2 border-gray-200 pl-6">
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
+                            <p class="text-sm text-gray-500">Oct 2023 - May 2025</p>
+                            <h4 class="text-lg font-semibold">Ph.D. in Micro-Nano Mechanical Science and Engineering</h4>
+                            <p class="text-gray-600">Nagoya University, Japan</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
+                            <p class="text-sm text-gray-500">Oct 2021 - Sep 2023</p>
+                            <h4 class="text-lg font-semibold">M.S. in Mechanical System Engineering</h4>
+                            <p class="text-gray-600">Nagoya University, Japan</p>
+                        </div>
+                        <div>
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
+                            <p class="text-sm text-gray-500">June 2014 - May 2018</p>
+                            <h4 class="text-lg font-semibold">B.Tech in Mechanical Engineering</h4>
+                            <p class="text-gray-600">COEP Technological University, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Timeline -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-x-3"><i class="fas fa-briefcase text-blue-600"></i> Experience</h3>
+                    <div class="relative border-l-2 border-gray-200 pl-6">
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
+                            <p class="text-sm text-gray-500">May 2025 - Present</p>
+                            <h4 class="text-lg font-semibold">Postdoctoral Researcher</h4>
+                            <p class="text-gray-600">Nagoya University, Japan</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
+                            <p class="text-sm text-gray-500">July 2024 - Nov 2024</p>
+                            <h4 class="text-lg font-semibold">Research Intern</h4>
+                            <p class="text-gray-600 mb-1">Polytechnique Montréal, Canada</p>
+                            <p class="text-gray-500 text-sm">Conducted research on shape-morphing metamaterials and soft robotics for next-generation orthopedic solutions.</p>
+                        </div>
+                        <div class="mb-8">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
+                            <p class="text-sm text-gray-500">Dec 2022 - Apr 2023</p>
+                            <h4 class="text-lg font-semibold">Intern (Digital Transformation)</h4>
+                            <p class="text-gray-600 mb-1">MFTBC, Kawasaki, Japan</p>
+                             <p class="text-gray-500 text-sm">Assisted in developing a new digital platform to enhance customer service by reducing vehicle downtime.</p>
+                        </div>
+                        <div>
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
+                            <p class="text-sm text-gray-500">July 2018 - Nov 2020</p>
+                            <h4 class="text-lg font-semibold">Mechanical Design Engineer</h4>
+                            <p class="text-gray-600 mb-1">Aker Solutions, Pune, India</p>
+                            <p class="text-gray-500 text-sm">Worked on the engineering design of subsea XMT and standardized testing. Received 'Significant Contribution Award'.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-x-3"><i class="fas fa-cogs text-blue-600"></i> Skills</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-2">Software:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">SolidWorks (CSWP)</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">ANSYS</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">ROS</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">MATLAB</span>
+                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Simulink</span>
+                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Abaqus</span>
+                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Hypermesh</span>
+                            </div>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold mb-2">Manufacturing:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">3D printing</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Laser cutting</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">CNC</span>
+                            </div>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold mb-2">Languages:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">English (Business)</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Japanese (JLPT N2)</span>
+                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Marathi (Native)</span>
+                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Hindi (Native)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                <!-- Awards Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-x-3"><i class="fas fa-trophy text-blue-600"></i> Selected Awards</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Best Paper Award</span>, IEEE CBS (2024)</div></li>
+                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Best Paper Award</span>, IEEE RO-MAN (2023)</div></li>
+                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Outstanding Presentation Award</span>, Nagoya University (2022)</div></li>
+                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Japanese Government MEXT Scholarship</span> (2020)</div></li>
+                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Significant Contribution Award</span>, Aker Solutions (2019)</div></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center pt-6">
+                    <a href="Jayant_CV.pdf" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow hover:shadow-lg transform hover:-translate-y-0.5">
+                        Download Full CV (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center max-w-7xl">
+            <p>&copy; 2025 Jayant Unde. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
