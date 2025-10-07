@@ -1,120 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayant Unde - Postdoctoral Researcher</title>
+
+    <!-- Google tag (gtag.js) - PASTE YOUR SNIPPET HERE -->
+    <!-- Replace G-XXXXXXXXXX with your own Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TY0GD62XVQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TY0GD62XVQ');
+</script>');
+    </script>
+    <!-- End Google Analytics -->
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A very light gray background */
         }
         .section-title {
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #3b82f6; /* A nice blue accent */
+            padding-bottom: 8px;
+            margin-bottom: 2rem;
+            display: inline-block;
         }
-        .publication-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #f3f4f6;
+        .nav-link {
+            transition: color 0.3s;
         }
-        .publication-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .social-link:hover i {
+            transform: scale(1.1);
+            transition: transform 0.2s;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+
+<body class="text-gray-800">
 
     <!-- Header & Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto max-w-screen-xl px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div>
-                    <h1 class="text-2xl font-bold text-gray-900">Jayant Unde</h1>
-                    <p class="text-md text-gray-600">Postdoctoral Researcher</p>
-                </div>
-                <nav class="hidden md:flex items-center space-x-6">
-                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
-                    <a href="#cv" class="text-gray-600 hover:text-blue-600 transition">CV</a>
-                    <a href="#publications" class="text-gray-600 hover:text-blue-600 transition">Publications</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
-                </nav>
-                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="#" class="text-2xl font-bold text-gray-900">Jayant Unde</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-600 font-medium">About Me</a>
+                <a href="#cv" class="nav-link text-gray-600 font-medium">CV</a>
+                <a href="#publications" class="nav-link text-gray-600 font-medium">Publications</a>
+                <a href="#contact" class="nav-link text-gray-600 font-medium">Contact</a>
+            </div>
+             <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
                     <i class="fas fa-bars fa-lg"></i>
                 </button>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <a href="#about" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">About</a>
-            <a href="#cv" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">CV</a>
-            <a href="#publications" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Publications</a>
-            <a href="#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </nav>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 font-medium">About Me</a>
+            <a href="#cv" class="block py-2 text-gray-600 font-medium">CV</a>
+            <a href="#publications" class="block py-2 text-gray-600 font-medium">Publications</a>
+            <a href="#contact" class="block py-2 text-gray-600 font-medium">Contact</a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto max-w-screen-xl px-6 py-12">
+    <main class="container mx-auto px-6 py-12 max-w-7xl">
 
-        <!-- About Section -->
+        <!-- About Me Section -->
         <section id="about" class="mb-16 scroll-mt-20">
-            <div class="flex flex-col md:flex-row items-start gap-8">
-                <div class="w-full md:w-1/3 text-center">
-                    <img src="my-photo.png" alt="Jayant Unde" class="rounded-full mx-auto shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover object-top">
-                    <div class="mt-6 inline-block text-left">
-                        <div class="flex items-center justify-start mb-3">
-                             <i class="fas fa-map-marker-alt w-6 text-gray-500"></i>
-                             <span class="ml-2">Nagoya, Japan</span>
-                        </div>
-                        <div class="flex items-center justify-start mb-3">
-                             <i class="fas fa-building w-6 text-gray-500"></i>
-                             <span class="ml-2">Nagoya University</span>
-                        </div>
-                        <div class="flex items-center justify-start mb-3">
-                             <i class="fas fa-envelope w-6 text-gray-500"></i>
-                             <a href="mailto:jayant.unde7@gmail.com" class="ml-2 text-blue-600 hover:underline">Email</a>
-                        </div>
-                         <div class="flex items-center justify-start mb-3">
-                             <i class="fab fa-linkedin w-6 text-gray-500"></i>
-                             <a href="https://www.linkedin.com/in/jayant-unde-38b54b152" target="_blank" class="ml-2 text-blue-600 hover:underline">LinkedIn</a>
-                        </div>
-                         <div class="flex items-center justify-start mb-3">
-                             <i class="fab fa-github w-6 text-gray-500"></i>
-                             <a href="https://github.com/jayantunde" target="_blank" class="ml-2 text-blue-600 hover:underline">Github</a>
-                        </div>
-                        <div class="flex items-center justify-start mb-3">
-                             <i class="fas fa-graduation-cap w-6 text-gray-500"></i>
-                             <a href="https://scholar.google.com/citations?user=ClFvQWIAAAAJ&hl=en" target="_blank" class="ml-2 text-blue-600 hover:underline">Google Scholar</a>
-                        </div>
-                        <div class="flex items-center justify-start">
-                             <i class="fab fa-orcid w-6 text-gray-500"></i>
-                             <a href="https://orcid.org/0000-0002-3369-776X" target="_blank" class="ml-2 text-blue-600 hover:underline">ORCID</a>
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                
+                <!-- Left Column: Photo and Info -->
+                <div class="w-full md:w-1/3 text-center md:text-left">
+                     <div class="w-64 h-64 rounded-full mx-auto md:mx-0 mb-6 overflow-hidden shadow-lg border-4 border-white">
+                        <img src="my-photo.png" alt="Jayant Unde" class="w-full h-full object-cover" style="object-position: top;">
+                    </div>
+                    <div class="flex justify-center md:justify-start">
+                        <div class="text-left">
+                            <a href="mailto:jayant.unde7@gmail.com" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
+                                <i class="fas fa-envelope fa-fw"></i><span>Email</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jayant-unde-38b54b152" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
+                                <i class="fab fa-linkedin fa-fw"></i><span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/jayantunde" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
+                                <i class="fab fa-github fa-fw"></i><span>GitHub</span>
+                            </a>
+                             <a href="https://scholar.google.com/citations?user=ClFvQWIAAAAJ&hl=en" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
+                                <i class="fas fa-graduation-cap fa-fw"></i><span>Google Scholar</span>
+                            </a>
+                             <a href="https://orcid.org/0000-0002-3369-776X" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
+                                <i class="fab fa-orcid fa-fw"></i><span>ORCID</span>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Jayant-Unde" target="_blank" class="flex items-center space-x-3 mb-3 text-gray-600 hover:text-blue-600 social-link">
+                                <i class="fab fa-researchgate fa-fw"></i><span>ResearchGate</span>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right Column: Bio -->
                 <div class="w-full md:w-2/3">
                     <h2 class="text-3xl font-bold section-title">About Me</h2>
-                    <p class="text-lg leading-relaxed mb-4">
-                        I am a Postdoctoral Researcher at the Institute of Innovation for Future Society, <a href="https://en.nagoya-u.ac.jp/" target="_blank" class="text-blue-600 hover:underline font-medium">Nagoya University</a>, Japan, working in the <a href="https://www.mein.nagoya-u.ac.jp/en/index.html" target="_blank" class="text-blue-600 hover:underline font-medium">Intelligent Robotics and Biomechatronics Laboratory</a>. My research focuses on designing intelligent robotic systems that enhance human capabilities and improve quality of life. I specialize in assistive technologies, safe physical human-robot interaction, and robotic manipulation of clothing, with a particular emphasis on dressing assistance and the development of novel mechanisms such as high extension ratio linear actuators.
-                    </p>
-                    <p class="text-lg leading-relaxed mb-4">
-                        My academic journey began with a B.Tech in Mechanical Engineering from <a href="https://www.coeptech.ac.in/" target="_blank" class="text-blue-600 hover:underline font-medium">COEP Technological University</a>, followed by a Master’s and Ph.D. in Mechanical Systems Engineering and Micro-Nano Mechanical Science and Engineering at Nagoya University. During my graduate studies, I developed robotic solutions for elderly care, including high-extension actuators and end-effectors capable of handling human-worn garments and fabric separation.
-                    </p>
-                    <p class="text-lg leading-relaxed mb-6">
-                        I'm driven by a passion for robotics, mechanical design, and automation to solve real-world problems and foster inclusivity through intelligent assistive systems. I welcome collaboration with like-minded researchers and professionals. Feel free to connect via email or social links on this site.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="Jayant_CV.pdf" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition shadow-md" download>
-                            <i class="fas fa-download mr-2"></i>Download CV
-                        </a>
-                         <a href="mailto:jayant.unde7@gmail.com" class="bg-gray-700 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition shadow-md">
-                            <i class="fas fa-envelope mr-2"></i>Contact Me
-                        </a>
+                    <div class="space-y-4 text-lg leading-relaxed">
+                        <p>I am a Postdoctoral Researcher at the Institute of Innovation for Future Society, <a href="https://en.nagoya-u.ac.jp/" target="_blank" class="text-blue-600 hover:underline">Nagoya University</a>, Japan, working in the <a href="http://www.mein.nagoya-u.ac.jp/en/index.html" target="_blank" class="text-blue-600 hover:underline">Intelligent Robotics and Biomechatronics Laboratory</a>. My research focuses on designing intelligent robotic systems to assist the elderly with their activities of daily living. I specialize in assistive robotics hardware development, particularly hardware with embodied intelligence for safe physical human-robot interaction for the complex challenge of robotic clothing manipulation.</p>
+                        <p>My academic journey began with a B.Tech in Mechanical Engineering from <a href="https://www.coeptech.ac.in/" target="_blank" class="text-blue-600 hover:underline">COEP Technological University</a>, followed by a Master’s and Ph.D. in Mechanical Systems Engineering and Micro-Nano Mechanical Science and Engineering at Nagoya University. During my graduate studies, I developed robotic solutions for elderly care, including high-extension actuators and end-effectors capable of handling human-worn garments and fabric separation.</p>
+                        <p>I'm driven by a passion for robotics, mechanical design, and automation to solve real-world problems and foster inclusivity through intelligent assistive systems. I welcome collaboration with like-minded researchers and professionals. Feel free to connect via email or social links on this site.</p>
                     </div>
                 </div>
             </div>
@@ -124,94 +135,54 @@
         <section id="cv" class="mb-16 scroll-mt-20">
             <h2 class="text-3xl font-bold section-title">Curriculum Vitae</h2>
             <div class="bg-white p-8 rounded-lg shadow-md space-y-8">
-                <!-- Education -->
                 <div>
-                    <h3 class="text-2xl font-semibold border-b pb-2 mb-4">Education</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-                        <div class="md:col-span-1 text-gray-600 font-medium">Oct 2023 - May 2025</div>
-                        <div class="md:col-span-3">
-                            <h4 class="font-bold">Ph.D. in Micro-Nano Mechanical Science and Engineering</h4>
-                            <p class="italic text-gray-700">Nagoya University, Japan</p>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-                        <div class="md:col-span-1 text-gray-600 font-medium">Oct 2021 - Sep 2023</div>
-                        <div class="md:col-span-3">
-                            <h4 class="font-bold">M.S. in Mechanical System Engineering</h4>
-                            <p class="italic text-gray-700">Nagoya University, Japan</p>
-                        </div>
-                    </div>
-                     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                        <div class="md:col-span-1 text-gray-600 font-medium">June 2014 - May 2018</div>
-                        <div class="md:col-span-3">
-                            <h4 class="font-bold">Bachelor of Tech: Mechanical Engineering</h4>
-                            <p class="italic text-gray-700">COEP Tech. University, India</p>
-                        </div>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Education</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><span class="font-bold">Ph.D. in Micro-Nano Mechanical Science and Engineering</span>, Nagoya University, Japan (2023-2025)</li>
+                        <li><span class="font-bold">M.S. in Mechanical System Engineering</span>, Nagoya University, Japan (2021-2023)</li>
+                        <li><span class="font-bold">B.Tech in Mechanical Engineering</span>, COEP Technological University, India (2014-2018)</li>
+                    </ul>
                 </div>
-
-                <!-- Experience -->
-                <div>
-                    <h3 class="text-2xl font-semibold border-b pb-2 mb-4">Experience</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-                        <div class="md:col-span-1 text-gray-600 font-medium">July 2024 - Nov 2024</div>
-                        <div class="md:col-span-3">
-                            <h4 class="font-bold">Research Intern</h4>
-                            <p class="italic text-gray-700">Polytechnique Montreal, Canada</p>
-                            <ul class="list-disc list-inside mt-2 text-gray-600">
-                                <li>Researched shape-morphing metamaterials for orthopedic solutions.</li>
-                                <li>Developed a configurable orthopedic brace using 3D-printed TPU inflatables.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-                        <div class="md:col-span-1 text-gray-600 font-medium">Dec 2022 - Apr 2023</div>
-                        <div class="md:col-span-3">
-                            <h4 class="font-bold">Intern (Digital Transformation)</h4>
-                            <p class="italic text-gray-700">MFTBC, Kawasaki, Japan</p>
-                             <ul class="list-disc list-inside mt-2 text-gray-600">
-                                <li>Assisted in developing a new digital platform to enhance customer service.</li>
-                                <li>Led user acceptance testing and created training documents.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-                        <div class="md:col-span-1 text-gray-600 font-medium">July 2018 - Nov 2020</div>
-                        <div class="md:col-span-3">
-                            <h4 class="font-bold">Mechanical Design Engineer</h4>
-                            <p class="italic text-gray-700">Aker Solution, Pune, India</p>
-                            <ul class="list-disc list-inside mt-2 text-gray-600">
-                                <li>Worked on the engineering design of subsea XMT and standardized testing.</li>
-                                <li>Delivered on a bottleneck engineering challenge for a large deepwater project.</li>
-                            </ul>
-                        </div>
-                    </div>
+                 <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Experience</h3>
+                    <ul class="list-disc list-inside space-y-4">
+                        <li>
+                            <span class="font-bold">Postdoctoral Researcher</span> | Nagoya University, Japan (May 2025 - Present)
+                        </li>
+                        <li>
+                            <span class="font-bold">Research Intern</span> | Polytechnique Montréal, Canada (July 2024 - Nov 2024)
+                             <p class="ml-6 text-gray-600">Conducted research on shape-morphing metamaterials and soft robotics for next-generation orthopedic solutions.</p>
+                        </li>
+                         <li>
+                            <span class="font-bold">Intern (Digital Transformation)</span> | MFTBC, Kawasaki, Japan (Dec 2022 - Apr 2023)
+                            <p class="ml-6 text-gray-600">Assisted in developing a new digital platform to enhance customer service by reducing vehicle downtime.</p>
+                        </li>
+                        <li>
+                            <span class="font-bold">Mechanical Design Engineer</span> | Aker Solutions, Pune, India (July 2018 - Nov 2020)
+                            <p class="ml-6 text-gray-600">Worked on the engineering design of subsea XMT and standardized testing. Received 'Significant Contribution Award'.</p>
+                        </li>
+                    </ul>
                 </div>
-                
-                 <!-- Awards -->
                 <div>
-                    <h3 class="text-2xl font-semibold border-b pb-2 mb-4">Awards & Honors</h3>
-                     <ul class="list-disc list-inside mt-2 text-gray-600 space-y-1">
-                        <li>Best Paper Award, IEEE RO-MAN 2023</li>
-                        <li>Best Paper Award, IEEE CBS 2023</li>
-                        <li>Best Presentation Award, Nagoya University 2022</li>
-                        <li>Japanese Government MEXT Scholarship, 2020</li>
-                        <li>Significant Contribution Award, Aker Solutions, 2029</li>
-                     </ul>
+                     <h3 class="text-2xl font-bold mb-4 text-gray-900">Skills</h3>
+                     <p><span class="font-bold">Software:</span> SolidWorks (CSWP), ANSYS, ROS, Python, MATLAB, Simulink, Abaqus, Hypermesh, CoppeliaSim.</p>
+                     <p><span class="font-bold">Manufacturing:</span> 3D printing, Laser cutting, CNC.</p>
+                     <p><span class="font-bold">Languages:</span> English (Business), Japanese (JLPT N2), Marathi (Native), Hindi (Native).</p>
                 </div>
-
-                 <!-- Skills -->
-                <div>
-                    <h3 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h3>
-                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">SolidWorks (CSWP)</span>
-                        <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">ANSYS</span>
-                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">ROS</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Python</span>
-                         <span class="bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">MATLAB</span>
-                         <span class="bg-red-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">3D Printing</span>
-                         <span class="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">Japanese (JLPT N2)</span>
-                    </div>
+                 <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Awards</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Best Paper Award, IEEE CBS (2024)</li>
+                        <li>Best Paper Award, IEEE RO-MAN (2023)</li>
+                        <li>Outstanding Presentation Award, Nagoya University (2022)</li>
+                        <li>Japanese Government MEXT Scholarship (2020)</li>
+                         <li>Significant Contribution Award, Aker Solutions (2019)</li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <a href="Jayant_CV.pdf" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                        Download Full CV (PDF)
+                    </a>
                 </div>
             </div>
         </section>
@@ -227,24 +198,21 @@
 
         <!-- Contact Section -->
         <section id="contact" class="scroll-mt-20">
-             <h2 class="text-3xl font-bold section-title">Get In Touch</h2>
-             <div class="bg-white p-8 rounded-lg shadow-md text-center">
-                 <p class="text-lg mb-6">
-                     I'm always open to discussing research, collaborations, or new opportunities. Feel free to reach out via email.
-                 </p>
-                 <a href="mailto:jayant.unde7@gmail.com" class="text-xl font-medium text-blue-600 hover:underline">
-                     <i class="fas fa-envelope mr-2"></i> jayant.unde7@gmail.com
-                 </a>
-             </div>
+            <h2 class="text-3xl font-bold section-title">Get In Touch</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <p class="text-lg mb-4">I am always open to discussing new research, collaborations, or opportunities. Feel free to reach out!</p>
+                <a href="mailto:jayant.unde7@gmail.com" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                    Contact Me
+                </a>
+            </div>
         </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white mt-16 border-t">
-        <div class="container mx-auto max-w-screen-xl px-6 py-6 text-center text-gray-600">
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center max-w-7xl">
             <p>&copy; 2025 Jayant Unde. All Rights Reserved.</p>
-            <p class="text-sm mt-1">Powered by GitHub Pages.</p>
         </div>
     </footer>
 
@@ -252,27 +220,12 @@
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                mobileMenu.classList.add('hidden'); // Close menu on click
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
         });
     </script>
 
 </body>
 </html>
-
-
-
 
 
