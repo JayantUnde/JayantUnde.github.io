@@ -42,6 +42,30 @@
         .active-link {
             color: #2563eb;
             font-weight: 700;
+            text-decoration: underline;
+        }
+        /* Timeline styling */
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            padding-bottom: 2rem;
+            border-left: 2px solid #e2e8f0;
+        }
+        .timeline-item:last-child {
+            border-left: 2px solid transparent;
+        }
+        .timeline-icon {
+            position: absolute;
+            left: -1.1rem;
+            top: 0;
+            width: 2.2rem;
+            height: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b82f6;
+            color: white;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -74,138 +98,137 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12 max-w-7xl">
-
-        <!-- CV Section -->
-        <section id="cv">
-            <h2 class="text-3xl font-bold section-title">Curriculum Vitae</h2>
-            <div class="bg-white p-8 rounded-lg shadow-md space-y-10">
-
-                <!-- Education Timeline -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-x-3"><i class="fas fa-graduation-cap text-blue-600"></i> Education</h3>
-                    <div class="relative border-l-2 border-gray-200 pl-6">
-                        <div class="mb-8">
-                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
-                            <p class="text-sm text-gray-500">Oct 2023 - May 2025</p>
-                            <h4 class="text-lg font-semibold">Ph.D. in Micro-Nano Mechanical Science and Engineering</h4>
-                            <p class="text-gray-600">Nagoya University, Japan</p>
-                        </div>
-                        <div class="mb-8">
-                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
-                            <p class="text-sm text-gray-500">Oct 2021 - Sep 2023</p>
-                            <h4 class="text-lg font-semibold">M.S. in Mechanical System Engineering</h4>
-                            <p class="text-gray-600">Nagoya University, Japan</p>
-                        </div>
+        <div class="md:flex md:space-x-12">
+            <!-- Left Side: CV Content -->
+            <div class="md:w-2/3">
+                <section id="cv">
+                    <h2 class="text-3xl font-bold section-title">Curriculum Vitae</h2>
+                    <div class="space-y-12">
+                         <!-- Education Section -->
                         <div>
-                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
-                            <p class="text-sm text-gray-500">June 2014 - May 2018</p>
-                            <h4 class="text-lg font-semibold">B.Tech in Mechanical Engineering</h4>
-                            <p class="text-gray-600">COEP Technological University, India</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Timeline -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-x-3"><i class="fas fa-briefcase text-blue-600"></i> Experience</h3>
-                    <div class="relative border-l-2 border-gray-200 pl-6">
-                        <div class="mb-8">
-                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
-                            <p class="text-sm text-gray-500">May 2025 - Present</p>
-                            <h4 class="text-lg font-semibold">Postdoctoral Researcher</h4>
-                            <p class="text-gray-600">Nagoya University, Japan</p>
-                        </div>
-                        <div class="mb-8">
-                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
-                            <p class="text-sm text-gray-500">July 2024 - Nov 2024</p>
-                            <h4 class="text-lg font-semibold">Research Intern</h4>
-                            <p class="text-gray-600 mb-1">Polytechnique Montréal, Canada</p>
-                            <p class="text-gray-500 text-sm">Conducted research on shape-morphing metamaterials and soft robotics for next-generation orthopedic solutions.</p>
-                        </div>
-                        <div class="mb-8">
-                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
-                            <p class="text-sm text-gray-500">Dec 2022 - Apr 2023</p>
-                            <h4 class="text-lg font-semibold">Intern (Digital Transformation)</h4>
-                            <p class="text-gray-600 mb-1">MFTBC, Kawasaki, Japan</p>
-                             <p class="text-gray-500 text-sm">Assisted in developing a new digital platform to enhance customer service by reducing vehicle downtime.</p>
-                        </div>
-                        <div>
-                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-2.5 border-4 border-white"></div>
-                            <p class="text-sm text-gray-500">July 2018 - Nov 2020</p>
-                            <h4 class="text-lg font-semibold">Mechanical Design Engineer</h4>
-                            <p class="text-gray-600 mb-1">Aker Solutions, Pune, India</p>
-                            <p class="text-gray-500 text-sm">Worked on the engineering design of subsea XMT and standardized testing. Received 'Significant Contribution Award'.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills Section -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-x-3"><i class="fas fa-cogs text-blue-600"></i> Skills</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-semibold mb-2">Software:</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">SolidWorks (CSWP)</span>
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">ANSYS</span>
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">ROS</span>
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">MATLAB</span>
-                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Simulink</span>
-                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Abaqus</span>
-                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Hypermesh</span>
+                            <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-university mr-3 text-blue-500"></i>Education</h3>
+                            <div class="relative">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                                    <h4 class="font-bold text-lg">Ph.D. in Micro-Nano Mechanical Science and Engineering</h4>
+                                    <p class="text-gray-600">Nagoya University, Japan</p>
+                                    <p class="text-sm text-gray-500">Oct 2023 - May 2025</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                                    <h4 class="font-bold text-lg">M.S. in Mechanical System Engineering</h4>
+                                    <p class="text-gray-600">Nagoya University, Japan</p>
+                                    <p class="text-sm text-gray-500">Oct 2021 - Sep 2023</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
+                                    <h4 class="font-bold text-lg">Bachelor of Technology in Mechanical Engineering</h4>
+                                    <p class="text-gray-600">COEP Technological University, India</p>
+                                    <p class="text-sm text-gray-500">June 2014 - May 2018</p>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Experience Section -->
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-briefcase mr-3 text-blue-500"></i>Experience</h3>
+                            <div class="relative">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"><i class="fas fa-flask"></i></div>
+                                    <h4 class="font-bold text-lg">Postdoctoral Researcher</h4>
+                                    <p class="text-gray-600">Nagoya University, Japan</p>
+                                    <p class="text-sm text-gray-500">June 2025 - Present</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"><i class="fas fa-user-cog"></i></div>
+                                    <h4 class="font-bold text-lg">Mechanical Design Engineer</h4>
+                                    <p class="text-gray-600">Aker Solutions, Pune, India</p>
+                                    <p class="text-sm text-gray-500">July 2018 - Nov 2020</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills Section -->
                          <div>
-                            <h4 class="font-semibold mb-2">Manufacturing:</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">3D printing</span>
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Laser cutting</span>
-                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">CNC</span>
+                            <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-cogs mr-3 text-blue-500"></i>Skills</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">SolidWorks (CSWP)</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">ANSYS</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">ROS</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">Python</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full">MATLAB</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full">3D Printing</span>
+                                <span class="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-full">Laser Cutting</span>
                             </div>
                         </div>
-                         <div>
-                            <h4 class="font-semibold mb-2">Languages:</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">English (Business)</span>
-                                <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Japanese (JLPT N2)</span>
-                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Marathi (Native)</span>
-                                <span class="bg-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Hindi (Native)</span>
-                            </div>
+
+                         <!-- Awards Section -->
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-award mr-3 text-blue-500"></i>Awards</h3>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Best Paper Award, IEEE CBS 2024</li>
+                                <li>Best Paper Award, IEEE RO-MAN 2023</li>
+                                <li>Best Paper Finalist, IEEE MHS 2021</li>
+                                <li>Japanese Government (MEXT) Scholarship, 2020</li>
+                                <li>Significant Contribution Award, Aker Solutions, 2019</li>
+                            </ul>
+                        </div>
+                        
+                         <!-- Reviewer Section -->
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-glasses mr-3 text-blue-500"></i>Reviewer for</h3>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Springer Nature, ROBOMECH Journal</li>
+                                <li>IEEE Robotics and Automation Letters (RA-L)</li>
+                                <li>IEEE International Conference on Robotics and Automation (ICRA)</li>
+                             </ul>
                         </div>
                     </div>
-                </div>
-                 
-                <!-- Awards Section -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-x-3"><i class="fas fa-trophy text-blue-600"></i> Selected Awards</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Best Paper Award</span>, IEEE CBS (2024)</div></li>
-                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Best Paper Award</span>, IEEE RO-MAN (2023)</div></li>
-                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Outstanding Presentation Award</span>, Nagoya University (2022)</div></li>
-                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Japanese Government MEXT Scholarship</span> (2020-2025)</div></li>
-                        <li class="flex items-start"><i class="fas fa-award text-yellow-500 mt-1 mr-3"></i> <div><span class="font-semibold">Significant Contribution Award</span>, Aker Solutions (2019)</div></li>
-                    </ul>
-                </div>
-
-                <!-- Reviewer Section -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-x-3"><i class="fas fa-user-check text-blue-600"></i> Reviewer for</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start"><i class="fas fa-book-open text-gray-400 mt-1 mr-3"></i> <div>Springer Nature, ROBOMECH Journal</div></li>
-                        <li class="flex items-start"><i class="fas fa-book-open text-gray-400 mt-1 mr-3"></i> <div>IEEE Robotics and Automation Letters (RA-L)</div></li>
-                        <li class="flex items-start"><i class="fas fa-book-open text-gray-400 mt-1 mr-3"></i> <div>IEEE International Conference on Robotics and Automation (ICRA)</div></li>
-                    </ul>
-                </div>
-                
-                <div class="text-center pt-6">
-                    <a href="Jayant_CV.pdf" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow hover:shadow-lg transform hover:-translate-y-0.5">
-                        Download Full CV (PDF)
-                    </a>
+                </section>
+            </div>
+            
+            <!-- Right Sidebar -->
+            <div class="md:w-1/3 mt-12 md:mt-0">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center sticky top-24">
+                    <!-- Profile Image -->
+                    <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+                        <img src="my-photo.png" alt="Jayant Unde" class="w-full h-full object-cover" style="object-position: top center;">
+                    </div>
+                    <h3 class="text-2xl font-bold mt-6">Jayant Unde</h3>
+                    <p class="text-gray-600 mt-1">Postdoctoral Researcher</p>
+                    <!-- Social & Academic Links -->
+                    <div class="mt-8 text-left max-w-xs mx-auto">
+                        <ul class="space-y-4">
+                            <li><a href="mailto:jayant.unde7@gmail.com" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-envelope fa-fw mr-4 text-gray-500"></i>
+                                <span>Email</span>
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/jayant-unde-38b54b152/" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-linkedin fa-fw mr-4 text-gray-500"></i>
+                                <span>LinkedIn</span>
+                            </a></li>
+                            <li><a href="https://github.com/jayantunde" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-github fa-fw mr-4 text-gray-500"></i>
+                                <span>GitHub</span>
+                            </a></li>
+                             <li><a href="https://scholar.google.com/citations?user=ClFvQWIAAAAJ&hl=en" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-graduation-cap fa-fw mr-4 text-gray-500"></i>
+                                <span>Google Scholar</span>
+                            </a></li>
+                            <li><a href="https://orcid.org/0000-0002-3369-776X" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-orcid fa-fw mr-4 text-gray-500"></i>
+                                <span>ORCID</span>
+                            </a></li>
+                             <li><a href="https://www.researchgate.net/profile/Jayant-Unde" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-researchgate fa-fw mr-4 text-gray-500"></i>
+                                <span>ResearchGate</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <a href="Jayant_CV.pdf" target="_blank" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md">Download CV</a>
                 </div>
             </div>
-        </section>
-
+        </div>
     </main>
 
     <!-- Footer -->
@@ -223,7 +246,6 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
-
 </body>
 </html>
 
