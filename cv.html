@@ -44,7 +44,7 @@
             font-weight: 700;
             text-decoration: underline;
         }
-        /* Timeline styling */
+        /* Timeline styling from screenshot */
         .timeline-item {
             position: relative;
             padding-left: 3rem;
@@ -52,20 +52,18 @@
             border-left: 2px solid #e2e8f0;
         }
         .timeline-item:last-child {
+            padding-bottom: 0;
             border-left: 2px solid transparent;
         }
         .timeline-icon {
             position: absolute;
-            left: -1.1rem;
-            top: 0;
-            width: 2.2rem;
-            height: 2.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            left: -0.5rem; /* Adjusted for smaller dot */
+            top: 0.25rem;
+            width: 1rem;
+            height: 1rem;
             background-color: #3b82f6;
-            color: white;
             border-radius: 50%;
+            border: 2px solid white;
         }
     </style>
 </head>
@@ -109,19 +107,19 @@
                             <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-university mr-3 text-blue-500"></i>Education</h3>
                             <div class="relative">
                                 <div class="timeline-item">
-                                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                                    <div class="timeline-icon"></div>
                                     <h4 class="font-bold text-lg">Ph.D. in Micro-Nano Mechanical Science and Engineering</h4>
                                     <p class="text-gray-600">Nagoya University, Japan</p>
                                     <p class="text-sm text-gray-500">Oct 2023 - May 2025</p>
                                 </div>
                                 <div class="timeline-item">
-                                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                                    <div class="timeline-icon"></div>
                                     <h4 class="font-bold text-lg">M.S. in Mechanical System Engineering</h4>
                                     <p class="text-gray-600">Nagoya University, Japan</p>
                                     <p class="text-sm text-gray-500">Oct 2021 - Sep 2023</p>
                                 </div>
                                 <div class="timeline-item">
-                                    <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
+                                    <div class="timeline-icon"></div>
                                     <h4 class="font-bold text-lg">Bachelor of Technology in Mechanical Engineering</h4>
                                     <p class="text-gray-600">COEP Technological University, India</p>
                                     <p class="text-sm text-gray-500">June 2014 - May 2018</p>
@@ -134,16 +132,31 @@
                             <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-briefcase mr-3 text-blue-500"></i>Experience</h3>
                             <div class="relative">
                                 <div class="timeline-item">
-                                    <div class="timeline-icon"><i class="fas fa-flask"></i></div>
+                                    <div class="timeline-icon"></div>
                                     <h4 class="font-bold text-lg">Postdoctoral Researcher</h4>
                                     <p class="text-gray-600">Nagoya University, Japan</p>
                                     <p class="text-sm text-gray-500">June 2025 - Present</p>
                                 </div>
                                 <div class="timeline-item">
-                                    <div class="timeline-icon"><i class="fas fa-user-cog"></i></div>
+                                    <div class="timeline-icon"></div>
+                                    <h4 class="font-bold text-lg">Research Intern</h4>
+                                    <p class="text-gray-600">Polytechnique Montréal, Canada</p>
+                                    <p class="text-sm text-gray-500">July 2024 - Nov 2024</p>
+                                    <p class="mt-2 text-gray-700">Conducted research on shape-morphing metamaterials and soft robotics for next-generation orthopedic solutions.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"></div>
+                                    <h4 class="font-bold text-lg">Intern (Digital Transformation)</h4>
+                                    <p class="text-gray-600">MFTBC, Kawasaki, Japan</p>
+                                    <p class="text-sm text-gray-500">Dec 2022 - Apr 2023</p>
+                                     <p class="mt-2 text-gray-700">Assisted in developing a new digital platform to enhance customer service by reducing vehicle downtime.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"></div>
                                     <h4 class="font-bold text-lg">Mechanical Design Engineer</h4>
                                     <p class="text-gray-600">Aker Solutions, Pune, India</p>
                                     <p class="text-sm text-gray-500">July 2018 - Nov 2020</p>
+                                    <p class="mt-2 text-gray-700">Worked on the engineering design of subsea XMT and standardized testing. Received 'Significant Contribution Award'.</p>
                                 </div>
                             </div>
                         </div>
@@ -165,22 +178,22 @@
                          <!-- Awards Section -->
                         <div>
                             <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-award mr-3 text-blue-500"></i>Awards</h3>
-                            <ul class="list-disc list-inside space-y-2">
-                                <li>Best Paper Award, IEEE CBS 2024</li>
-                                <li>Best Paper Award, IEEE RO-MAN 2023</li>
-                                <li>Best Paper Finalist, IEEE MHS 2021</li>
-                                <li>Japanese Government (MEXT) Scholarship, 2020</li>
-                                <li>Significant Contribution Award, Aker Solutions, 2019</li>
+                            <ul class="list-none space-y-2">
+                                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i>Best Paper Award, IEEE CBS 2024</li>
+                                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i>Best Paper Award, IEEE RO-MAN 2023</li>
+                                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i>Best Paper Finalist, IEEE MHS 2021</li>
+                                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i>Japanese Government (MEXT) Scholarship, 2020</li>
+                                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i>Significant Contribution Award, Aker Solutions, 2019</li>
                             </ul>
                         </div>
                         
                          <!-- Reviewer Section -->
                         <div>
                             <h3 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-glasses mr-3 text-blue-500"></i>Reviewer for</h3>
-                            <ul class="list-disc list-inside space-y-2">
-                                <li>Springer Nature, ROBOMECH Journal</li>
-                                <li>IEEE Robotics and Automation Letters (RA-L)</li>
-                                <li>IEEE International Conference on Robotics and Automation (ICRA)</li>
+                            <ul class="list-none space-y-2">
+                                <li class="flex items-center"><i class="fas fa-list-alt text-gray-500 mr-3"></i>Springer Nature, ROBOMECH Journal</li>
+                                <li class="flex items-center"><i class="fas fa-list-alt text-gray-500 mr-3"></i>IEEE Robotics and Automation Letters (RA-L)</li>
+                                <li class="flex items-center"><i class="fas fa-list-alt text-gray-500 mr-3"></i>IEEE International Conference on Robotics and Automation (ICRA)</li>
                              </ul>
                         </div>
                     </div>
